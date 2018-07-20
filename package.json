@@ -1,0 +1,34 @@
+{
+  "name": "lucas-telegram",
+  "version": "0.0.0",
+  "description": "A Telegram bot for Sanca Harckerspace",
+  "repository": {
+    "url": "fczuardi/lucas-telegram",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor -x micro-bot index.js",
+    "start": "micro-bot",
+    "now-start": "micro-bot -d ${NOW_URL}",
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "author": "fczuardi <fabricio@fabricio.org>",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "micro-bot": "^2.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "supervisor": "^0.12.0"
+  }
+}
