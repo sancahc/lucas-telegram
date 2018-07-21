@@ -8,8 +8,8 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "dev": "supervisor -x micro-bot src/index.js",
-    "start": "micro-bot",
+    "dev": "supervisor -x micro-bot -- -e .env-dev src/index.js",
+    "start": "micro-bot -e .env-prod",
     "now-start": "micro-bot -d ${NOW_URL}"
   },
   "engines": {
