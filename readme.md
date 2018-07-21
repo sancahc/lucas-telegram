@@ -4,7 +4,7 @@
 
 ```sh
 $ yarn
-$ source .env
+$ source .env-dev
 $ yarn dev
 ```
 
@@ -14,6 +14,7 @@ This bot can be deployed to [now](https://zeit.co/now) by Zeit.
 Assuming you've got `now` installed and set up:
 
 ```sh
-$ now -e BOT_TOKEN="$BOT_TOKEN"
+$ source .env-prod
+$ now --public -e BOT_TOKEN="$BOT_TOKEN"
 ```
 
