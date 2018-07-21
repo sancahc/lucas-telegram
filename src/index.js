@@ -4,9 +4,9 @@ const knownStickers = require("./knownStickers");
 const ata = require("./ata");
 
 const bot = new Composer();
-const { NODE_ENV } = process.env;
+const { NODE_ENV, NOW_ALIAS } = process.env;
 
-console.log({ NODE_ENV });
+console.log({ NODE_ENV, NOW_ALIAS });
 
 if (NODE_ENV === "development") {
   bot.use(log());

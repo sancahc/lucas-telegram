@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "supervisor -x micro-bot src/index.js",
     "start": "micro-bot",
-    "now-start": "micro-bot -d ${NOW_URL}"
+    "now-start": "micro-bot -d ${NOW_ALIAS}"
   },
   "engines": {
     "node": ">=8.5.0"

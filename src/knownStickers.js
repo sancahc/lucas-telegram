@@ -1,5 +1,6 @@
 const knownStickers = (ctx, next) => {
   const { sticker } = ctx.message;
+  console.log({ sticker });
   if (!sticker) {
     return next();
   }
