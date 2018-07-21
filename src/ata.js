@@ -1,12 +1,13 @@
 const slotName = "ata";
 
 // stores or retrieves a message
-remember = ctx => {
+const remember = ctx => {
   const { reply, update, session } = ctx;
   const { savedMessages = {} } = session;
   const { message } = update;
   const { reply_to_message: msgToSave } = message;
 
+  console.log("=== ATA ===", msgToSave, savedMessages);
   // set message
   if (msgToSave) {
     ctx.session.savedMessages = { ...savedMessages, [slotName]: msgToSave };
@@ -23,3 +24,5 @@ remember = ctx => {
   // failed get message
   return reply("¯\\_(ツ)_/¯");
 };
+
+module.exports = remember;
