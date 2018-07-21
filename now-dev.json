@@ -1,0 +1,11 @@
+{
+  "name": "lucas-dev",
+  "alias": "lucas-dev",
+  "scale": {
+    "sfo1": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  "dotenv": ".env-dev"
+}
